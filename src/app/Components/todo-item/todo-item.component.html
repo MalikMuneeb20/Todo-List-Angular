@@ -1,0 +1,56 @@
+<!-- <div class="card" style="width: 18rem">
+  <div class="card-body">
+    <h5 [ngClass]="{ strike: !todo?.active }" class="card-title text-center">
+      {{ todo?.title }}
+    </h5>
+    <p class="card-text text-justify">{{ todo?.description }}</p>
+    <div class="form-check">
+      <input
+        class="form-check-input"
+        type="checkbox"
+        value=""
+        id="flexCheckChecked"
+        (click)="onCheckBoxClick(todo)"
+      />
+      <label class="form-check-label" for="flexCheckChecked"> Task Done </label>
+    </div>
+    <div class="text-center">
+      <button class="btn btn-danger px-4" (click)="onClick(todo)">
+        Delete
+      </button>
+    </div>
+  </div>
+</div> -->
+
+<section class="flexbox">
+  <div class="parent1">
+    <div class="parent1child2">{{todo?.date}}</div>
+    <div class="parent1child1">
+      <input
+        class="form-checkinput"
+        type="checkbox"
+        value=""
+        id="flexCheckChecked"
+        (click)="onCheckBoxClick(todo)"
+      />
+      <label class="form-check-label px-2" for="flexCheckChecked"> Task Done </label>
+    </div>
+  </div>
+
+  <div class="parent2">
+    <div [ngClass]="{ strike: !todo?.active }" class="parent2child1">{{ todo?.title }}</div>
+    <div class="parent2child2">
+      <div class="description-container">
+        <p class="description-text">{{todo?.description}}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="parent3">
+    <div>
+
+        <button class="parent3child1" type="submit"  (click)="onClick(todo)">Delete</button>
+
+    </div>
+  </div>
+</section>

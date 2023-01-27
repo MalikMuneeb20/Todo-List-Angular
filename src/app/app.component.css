@@ -1,0 +1,17 @@
+*{
+  background: linear-gradient(to bottom right, #5B7FFF,#33CCFC);
+height: 100vh;
+width: 100vw;
+font-family: 'Source Sans Pro', sans-serif;
+position: fixed;
+overflow-y: scroll;
+}
+.containerBox{
+  position: relative;
+ margin-top: 70px;
+ margin-bottom: 70px;
+}
+
+.snackbar{
+  position: absolute;
+}
